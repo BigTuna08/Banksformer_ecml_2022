@@ -1,7 +1,14 @@
-# Czech data experiments
+# Czech data metrics
 
 Code for running the syntetic data generation experiments from *Banksformer: A Deep Generative Model for Synthetic Transaction Sequences* 
 
-- banksformer/: Contains proper version of Banksformer, where each feature prediction is conditional on the previous features within a transaction. This code can be used for running the full Banksformer model, as well as the BF-ND variant used in ablation experiments. NOTE: This code is the most well commented.
-- banksformer_no_conditioning/: Contains ablated version of Banksformer, where each feature prediction is not conditional on the previous features within a transaction. This code can be used for running variants BF-NC and TF-V used in ablation experiments.
-- metrics/: Contains code for evaluating generated data. 
+- generated_data/: Place synthetically generated datasets here for analysis
+- mylib/: python helper files
+- real_data/: Place the real dataset which you are comparing the synthetic data against here
+- results/: Result objects are created here upon running 'nb1__make_results.ipynb'
+
+- field_config.py: Contains configuration information. This must match the 'field_config.py' file used to generate the data.
+- nb1__make_results.ipynb: Creates result objects. Note: This must be run before 'nb2__view_results.ipynb'
+- nb2__view_results.ipynb: Displays data created by nb1, used to make the table in our paper.
+- paper_figures-ecml.ipynb: Creates and displays figures from our paper
+ 
