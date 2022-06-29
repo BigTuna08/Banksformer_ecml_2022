@@ -1,4 +1,4 @@
-# Czech data experiments - Banksformer NC
+# UK data experiments - Banksformer NC
 
 Code for running the syntetic data generation experiments from *Banksformer: A Deep Generative Model for Synthetic Transaction Sequences* 
 

@@ -2,7 +2,7 @@
 
 Code for running the syntetic data generation experiments from *Banksformer: A Deep Generative Model for Synthetic Transaction Sequences* 
 
-Note: This notebook can be used for running the base version of Banksformer, as well as the BF-ND version used in ablation experiments. To change version, set the VERSION variable in 'field_config.py' to either 'BASE' or 'BF-ND'. If you change any information in 'field_config.py', you should run clear_old.ipynb and then restart the workflow, otherwise unexpected behavior may occur.
+Note: This code can be used for running the base version of Banksformer, as well as the BF-ND version used in ablation experiments. To change version, set the VERSION variable in 'field_config.py' to either 'BASE' or 'BF-ND'. If you change any information in 'field_config.py', you should run clear_old.ipynb and then restart the workflow, otherwise unexpected behavior may occur.
 
 
 Workflow:

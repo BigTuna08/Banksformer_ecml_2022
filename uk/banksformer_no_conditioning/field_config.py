@@ -1,10 +1,24 @@
-# from .constants import code_order
-
-
 import os
-
 from my_lib.encoding import load_data_encoder
 
+
+
+
+
+##########################  Set VERSION here  ##########################
+
+VERSION = "BF-NC"  # should be either "BASE" or "BF-ND" (see README.md for more info)
+
+#########################################################################
+
+
+
+if VERSION.upper() == "BF-NC":
+    DATE_FIELDS = ['dow', 'month', "day", 'dtme', 'td_sc']  
+elif VERSION.upper() == "TF-V":
+    DATE_FIELDS = ['td_sc']  
+else:
+    raise Exception(f"Got invalid VERSION! VERSION was {VERSION}. Valid options are 'BASE' or 'BF-ND'")
 
 
 

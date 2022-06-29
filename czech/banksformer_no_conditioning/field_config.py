@@ -3,8 +3,23 @@ from my_lib.encoding import load_data_encoder
 
 
 
+##########################  Set VERSION here  ##########################
+
+VERSION = "BF-NC"  # should be either "BASE" or "BF-ND" (see README.md for more info)
+
+#########################################################################
+
+
+
+if VERSION.upper() == "BF-NC":
+    DATE_FIELDS = ['dow', 'month', "day", 'dtme', 'td_sc']  
+elif VERSION.upper() == "TF-V":
+    DATE_FIELDS = ['td_sc']  
+else:
+    raise Exception(f"Got invalid VERSION! VERSION was {VERSION}. Valid options are 'BASE' or 'BF-ND'")
+
+
 CAT_FIELDS = ["k_symbol_num", "operation_num", "type_num"]
-DATE_FIELDS = ['dow', 'month', "day", 'dtme', 'td_sc']  
 CONT_FIELDS = ['log_amount_sc']  
 
 DATA_KEY_ORDER = CAT_FIELDS + DATE_FIELDS + CONT_FIELDS
