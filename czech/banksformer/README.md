@@ -1,7 +1,13 @@
-# Czech data experiments
+# Czech data experiments - Banksformer
 
 Code for running the syntetic data generation experiments from *Banksformer: A Deep Generative Model for Synthetic Transaction Sequences* 
 
-- banksformer/: Contains proper version of Banksformer, where each feature prediction is conditional on the previous features within a transaction. This code can be used for running the full Banksformer model, as well as the BF-ND variant used in ablation experiments. NOTE: This code is the most well commented.
-- banksformer_no_conditioning/: Contains ablated version of Banksformer, where each feature prediction is not conditional on the previous features within a transaction. This code can be used for running variants BF-NC and TF-V used in ablation experiments.
-- metrics/: Contains code for evaluating generated data. 
+Note: This notebook can be used for running the base version of Banksformer, as well as the BF-ND version used in ablation experiments. To change version, set the VERSION variable in 'field_config.py' to either 'BASE' or 'BF-ND'. If you change any information in 'field_config.py', you should run clear_old.ipynb and then restart the workflow, otherwise unexpected behavior may occur.
+
+
+Workflow:
+Run the notebooks in the order: nb1, nb2, nb3. Specifically:
+- 'nb1_preprocess_czech.ipynb' - Here you need to set some information if you are using a new dataset.  This nb ensures correct fields exist in dataframe, and stores information about the configurations used. 
+- 'nb2_encode_data.ipynb' - This nb takes the dataframe produced by nb1, and encodes the data as tensors, used for training the networks.
+- 'nb3_banksformer-v2.ipynb' - This nb trains banksformer models on the tensors, and then uses the trained models to generate synthetic datasets.
+
