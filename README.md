@@ -10,4 +10,4 @@ Other models used in this work are
 - TimeGAN: https://github.com/jsyoon0823/TimeGAN
 - DoppelGANger: https://github.com/fjxmlzn/DoppelGANger  
 
-For any questions,comments or concerns, contact Kyle Nickerson by email at kln870 'at' mun.ca
+For any questions, comments or concerns, contact Kyle Nickerson by email at kln870 'at' mun.ca
