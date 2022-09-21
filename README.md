@@ -2,7 +2,7 @@
 
 Code for running the syntetic data generation experiments from *Banksformer: A Deep Generative Model for Synthetic Transaction Sequences* 
 
-Paper: https://2022.ecmlpkdd.org/wp-content/uploads/2022/09/sub_523.pdf
+**Check out our paper!**: https://2022.ecmlpkdd.org/wp-content/uploads/2022/09/sub_523.pdf
 
 - czech/ : Contains code for running experiments involving the czech dataset
 - uk/ : Contains code for running experiments involving the uk dataset
